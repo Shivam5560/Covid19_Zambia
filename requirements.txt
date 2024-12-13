@@ -1,0 +1,11 @@
+streamlit
+streamlit-extras
+joblib
+xgboost
+numpy
+plotly==5.22.0
+pillow
+matplotlib
+pandas
+tensorflow
+seaborn
