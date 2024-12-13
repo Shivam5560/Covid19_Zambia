@@ -63,7 +63,7 @@ def forecasting_cases_page():
         combined_forecast = np.concatenate((forecast_array, additional_features), axis=1)
 
         # Perform inverse transformation
-        forecast_rescaled = scaler.inverse_transform(combined_forecast)[:, 0]
+        forecast_rescaled = combined_forecast[:, 0]
 
         # Create a DataFrame for displaying results
         forecast_df = pd.DataFrame(forecast_rescaled, columns=["Forecasted Values"])
